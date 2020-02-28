@@ -1,4 +1,3 @@
-
 import numpy as np
 import os
 from tensorflow import keras
@@ -40,5 +39,3 @@ np.save( '{}x.npy'.format( output_path )  , train_features )
 np.save( '{}y.npy'.format( output_path )  , train_labels )
 np.save( '{}test_x.npy'.format( output_path ) , test_features )
 np.save( '{}test_y.npy'.format( output_path ) , test_labels )
-
-

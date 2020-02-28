@@ -1,4 +1,3 @@
-
 from tensorflow.python.keras.callbacks import TensorBoard
 from Model import Classifier
 import numpy as np
@@ -38,6 +37,3 @@ print( "Loss of {}".format( loss ) , "Accuracy of {} %".format( accuracy * 100 )
 sample_X = classifier.prepare_images_from_dir( 'random_images/' )
 sample_X = sample_X.reshape( ( sample_X.shape[0] , data_dimension**2 ) ).astype( np.float32 )
 print( classifier.predict( sample_X ).argmax( 1 ) )
-
-
-

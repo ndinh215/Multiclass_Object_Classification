@@ -1,4 +1,3 @@
-
 from tensorflow.python.keras import models , optimizers , losses ,activations
 from tensorflow.python.keras.layers import *
 from PIL import Image
@@ -96,10 +95,3 @@ class Classifier (object) :
 
     def load_model(self , file_path ):
         self.__model = models.load_model(file_path)
-
-
-
-
-
-
-
